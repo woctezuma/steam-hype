@@ -32,6 +32,7 @@ Upcoming games with more than 8,000 followers (as of August 15, 2019) are shown 
 ## References
 
 -   [A tweet by the game dev Lars Doucet](https://twitter.com/larsiusprime/status/1159475890004385793)
+-   [A blog post by the indie consultant Simon Carless](https://gamediscoverability.substack.com/p/steams-follower-counts-hidden-in)
 -   [SteamDB](https://steamdb.info/upcoming/)
 -   [Steam Hype API](https://steamhype.com/calendar), which is not my work, and which my script relies on.
 
