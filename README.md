@@ -48,5 +48,5 @@ TODO
 [codecov-image]: <https://codecov.io/gh/woctezuma/steam-hype/branch/master/graph/badge.svg>
 
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-hype>
-[codacy-image]: <https://api.codacy.com/project/badge/Grade/TODO>
+[codacy-image]: <https://api.codacy.com/project/badge/Grade/dee72123ee614a8c9f38590830803a44>
 
