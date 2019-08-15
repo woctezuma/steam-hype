@@ -113,6 +113,12 @@ def batch_request_data(params,
     return results
 
 
+def get_steamdb_url(app_id):
+    url = 'https://steamdb.info/app/' + str(app_id) + '/'
+
+    return url
+
+
 def print_formatted_results(results):
     sorted_app_ids = sorted(results.keys(),
                             key=lambda x: results[x]['steam_followers'],
@@ -120,10 +126,11 @@ def print_formatted_results(results):
 
     for (rank, app_id) in enumerate(sorted_app_ids):
         game = results[app_id]
-        print('{:3}) {} (appID={} ; #followers = {})'.format(rank + 1,
-                                                             game['title'],
-                                                             game['id'],
-                                                             game['steam_followers']))
+        print('{:3}) {} (appID=[{}]({}) ; #followers = {})'.format(rank + 1,
+                                                                   game['title'],
+                                                                   game['id'],
+                                                                   get_steamdb_url(app_id),
+                                                                   game['steam_followers']))
     return
 
 
