@@ -6,7 +6,7 @@
 [![Code coverage][codecov-image]][codecov]
 [![Code Quality][codacy-image]][codacy]
 
-![Illustration](TODO)
+![Illustration](https://raw.githubusercontent.com/wiki/woctezuma/steam-hype/img/ranking_2019_08_15.png)
 
 This repository contains Python code to find upcoming Steam games with many followers.
 
@@ -27,7 +27,7 @@ python main.py
 
 ## Results
 
-TODO
+Upcoming games with more than 8,000 followers (as of August 15, 2019) are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
 
 ## References
 
