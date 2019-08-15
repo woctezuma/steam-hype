@@ -140,7 +140,7 @@ def main():
 
     print_formatted_results(results)
 
-    return
+    return True
 
 
 if __name__ == '__main__':
