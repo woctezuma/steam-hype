@@ -98,6 +98,22 @@ class TestDownloadHypeMethods(unittest.TestCase):
 
 class TestCompareToTopWishlistsMethods(unittest.TestCase):
 
+    def test_trim_rankings(self):
+        ranking_A = range(10)
+        ranking_B = range(20)
+
+        ranking_A, ranking_B = compare_to_top_wishlists.trim_rankings(ranking_A,
+                                                                      ranking_B)
+
+        self.assertEqual(len(ranking_A), len(ranking_B))
+
+    def test_compute_several_rank_correlations(self):
+        ranking_A = [12, 2, 1, 12, 2]
+        ranking_B = [1, 4, 7, 1, 0]
+
+        self.assertTrue(compare_to_top_wishlists.compute_several_rank_correlations(ranking_A,
+                                                                                   ranking_B))
+
     def test_main(self):
         self.assertTrue(compare_to_top_wishlists.main())
 
