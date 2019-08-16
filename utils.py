@@ -73,13 +73,24 @@ def get_steamdb_url(app_id):
     return url
 
 
-def print_formatted_results(results):
+def sort_by_followers(results=None):
+    if results is None:
+        results = load_results()
+
     sorted_app_ids = sorted(results.keys(),
                             key=lambda x: results[x]['steam_followers'],
                             reverse=True)
 
+    sorted_app_ids_as_integers = [int(app_id) for app_id in sorted_app_ids]
+
+    return sorted_app_ids_as_integers
+
+
+def print_formatted_results(results):
+    sorted_app_ids = sort_by_followers(results)
+
     for (rank, app_id) in enumerate(sorted_app_ids):
-        game = results[app_id]
+        game = results[str(app_id)]
         print('{:3}) {} (appID=[{}]({}) ; #followers = {})'.format(rank + 1,
                                                                    game['title'],
                                                                    game['id'],

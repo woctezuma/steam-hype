@@ -1,5 +1,6 @@
 import unittest
 
+import compare_to_top_wishlists
 import download_hype
 import utils
 
@@ -43,6 +44,17 @@ class TestUtilsMethods(unittest.TestCase):
 
         temp = utils.load_results(file_name=temp_file_name)
         self.assertEqual(results, temp)
+
+    def test_sort_by_followers(self):
+        results = utils.load_results()
+        app_ids = utils.sort_by_followers(results)
+
+        self.assertGreater(len(app_ids), 0)
+
+        first_amount = results[str(app_ids[0])]['steam_followers']
+        last_amount = results[str(app_ids[-1])]['steam_followers']
+
+        self.assertGreaterEqual(int(first_amount), int(last_amount))
 
     def test_print_formatted_results(self):
         results = utils.load_results()
