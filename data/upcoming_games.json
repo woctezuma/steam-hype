@@ -98,6 +98,111 @@
     "release_date": "1567036800000",
     "release_str": null
   },
+  "579120": {
+    "id": 579120,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Unlucky Seven",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/579120/header.jpg?t=1565172578",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6260,
+    "release_date": "1567123200000",
+    "release_str": null
+  },
+  "823950": {
+    "id": 823950,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Simulation",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Re:Legend",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/823950/header.jpg?t=1564060098",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6030,
+    "release_date": "1567123200000",
+    "release_str": null
+  },
+  "1092660": {
+    "id": 1092660,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Blair Witch",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1092660/header.jpg?t=1564399580",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7085,
+    "release_date": "1567123200000",
+    "release_str": null
+  },
+  "623340": {
+    "id": 623340,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "Massively Multiplayer",
+      "Simulation",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Stars End",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/623340/header.jpg?t=1564691421",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6402,
+    "release_date": "1567382400000",
+    "release_str": null
+  },
   "330020": {
     "id": 330020,
     "is_free": false,
@@ -152,6 +257,30 @@
     "release_date": "1567468800000",
     "release_str": null
   },
+  "996580": {
+    "id": 996580,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 3999,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Spyro\u2122 Reignited Trilogy",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/996580/header.jpg?t=1560272976",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7198,
+    "release_date": "1567468800000",
+    "release_str": null
+  },
   "606880": {
     "id": 606880,
     "is_free": false,
@@ -172,6 +301,29 @@
     "score": "0.00",
     "metacritic": 0,
     "steam_followers": 17848,
+    "release_date": "1568073600000",
+    "release_str": null
+  },
+  "996470": {
+    "id": 996470,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Sports"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 5999,
+    "current_discount": 0,
+    "type": "game",
+    "title": "eFootball  PES 2020",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/996470/header.jpg?t=1564507378",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6738,
     "release_date": "1568073600000",
     "release_str": null
   },
@@ -226,6 +378,31 @@
     "score": "0.00",
     "metacritic": 0,
     "steam_followers": 9831,
+    "release_date": "1568937600000",
+    "release_str": null
+  },
+  "871530": {
+    "id": 871530,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Radio Commander",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/871530/header.jpg?t=1565187082",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5436,
     "release_date": "1568937600000",
     "release_str": null
   },
@@ -354,6 +531,58 @@
     "release_date": "1570492800000",
     "release_str": null
   },
+  "690640": {
+    "id": 690640,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Trine 4: The Nightmare Prince",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/690640/header.jpg?t=1565337362",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5742,
+    "release_date": "1570492800000",
+    "release_str": null
+  },
+  "703860": {
+    "id": 703860,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Casual",
+      "Racing",
+      "Simulation",
+      "Sports"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 5999,
+    "current_discount": 0,
+    "type": "game",
+    "title": "GRID",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/703860/header.jpg?t=1564983929",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7769,
+    "release_date": "1570665600000",
+    "release_str": null
+  },
   "703080": {
     "id": 703080,
     "is_free": false,
@@ -402,6 +631,30 @@
     "metacritic": 0,
     "steam_followers": 35674,
     "release_date": "1573084800000",
+    "release_str": null
+  },
+  "768180": {
+    "id": 768180,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Truck Driver",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/768180/header.jpg?t=1565012353",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6454,
+    "release_date": "1574208000000",
     "release_str": null
   },
   "782330": {
@@ -653,6 +906,108 @@
     "release_date": "1579478400000",
     "release_str": null
   },
+  "822710": {
+    "id": 822710,
+    "is_free": true,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Free to Play",
+      "Indie",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Clash: Mutants Vs Pirates",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/822710/header.jpg?t=1564078312",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6432,
+    "release_date": "1579478400000",
+    "release_str": null
+  },
+  "865610": {
+    "id": 865610,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Backbone",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/865610/header.jpg?t=1560955463",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5079,
+    "release_date": "1579478400000",
+    "release_str": null
+  },
+  "953490": {
+    "id": 953490,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "CARRION",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/953490/header.jpg?t=1560176981",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6833,
+    "release_date": "1579478400000",
+    "release_str": null
+  },
+  "1040200": {
+    "id": 1040200,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Crime Scene Cleaner",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1040200/header.jpg?t=1564136927",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6462,
+    "release_date": "1579478400000",
+    "release_str": null
+  },
   "532790": {
     "id": 532790,
     "is_free": false,
@@ -722,6 +1077,32 @@
     "steam_followers": 14934,
     "release_date": "1592611200000",
     "release_str": null
+  },
+  "230210": {
+    "id": 230210,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "ASYLUM",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/230210/header.jpg?t=1553890615",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6635,
+    "release_date": "9999999999999",
+    "release_str": "As soon as we can."
   },
   "251590": {
     "id": 251590,
@@ -800,6 +1181,32 @@
     "release_date": "9999999999999",
     "release_str": "Coming soon"
   },
+  "347800": {
+    "id": 347800,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Ghost Song",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/347800/header.jpg?t=1534726601",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5869,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "350050": {
     "id": 350050,
     "is_free": false,
@@ -853,6 +1260,32 @@
     "steam_followers": 12334,
     "release_date": "9999999999999",
     "release_str": "Fall 2019"
+  },
+  "377300": {
+    "id": 377300,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Thunder Tier One",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/377300/header.jpg?t=1543754807",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5035,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
   },
   "382560": {
     "id": 382560,
@@ -1020,6 +1453,55 @@
     "release_date": "9999999999999",
     "release_str": "Launching 2019"
   },
+  "429380": {
+    "id": 429380,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Space Mechanic Simulator",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/429380/header.jpg?t=1563964413",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6685,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "500740": {
+    "id": 500740,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Enigma Prison",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/500740/header.jpg?t=1540421757",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6213,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "502050": {
     "id": 502050,
     "is_free": true,
@@ -1094,6 +1576,32 @@
     "steam_followers": 31407,
     "release_date": "9999999999999",
     "release_str": "Spring 2020"
+  },
+  "538030": {
+    "id": 538030,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Xenonauts 2",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/538030/header.jpg?t=1561749704",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5570,
+    "release_date": "9999999999999",
+    "release_str": "TBC"
   },
   "553420": {
     "id": 553420,
@@ -1201,6 +1709,32 @@
     "release_date": "9999999999999",
     "release_str": "Summer 2019"
   },
+  "565760": {
+    "id": 565760,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Escape the Loop",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/565760/header.jpg?t=1564392041",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6526,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "580640": {
     "id": 580640,
     "is_free": false,
@@ -1227,6 +1761,30 @@
     "steam_followers": 11059,
     "release_date": "9999999999999",
     "release_str": "Coming soon"
+  },
+  "580960": {
+    "id": 580960,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "OQU",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/580960/header.jpg?t=1559376556",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6417,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
   },
   "581150": {
     "id": 581150,
@@ -1277,6 +1835,57 @@
     "release_date": "9999999999999",
     "release_str": "TBD"
   },
+  "603470": {
+    "id": 603470,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Russian Love Story",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/603470/header.jpg?t=1556986135",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5863,
+    "release_date": "9999999999999",
+    "release_str": "SOON"
+  },
+  "604540": {
+    "id": 604540,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "RPG",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Empire of Sin",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/604540/header.jpg?t=1562680208",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5410,
+    "release_date": "9999999999999",
+    "release_str": "Spring 2020"
+  },
   "612400": {
     "id": 612400,
     "is_free": false,
@@ -1304,6 +1913,61 @@
     "steam_followers": 56895,
     "release_date": "9999999999999",
     "release_str": "TBA"
+  },
+  "623700": {
+    "id": 623700,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Casual",
+      "Indie",
+      "Simulation",
+      "Strategy",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Rec Center Tycoon",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/623700/header.jpg?t=1565272830",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5404,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "628670": {
+    "id": 628670,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Hellpoint",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/628670/header.jpg?t=1563883118",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6535,
+    "release_date": "9999999999999",
+    "release_str": "Early 2020"
   },
   "629820": {
     "id": 629820,
@@ -1463,6 +2127,30 @@
     "release_date": "9999999999999",
     "release_str": "TBD"
   },
+  "652620": {
+    "id": 652620,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "ElectriX: Electro Mechanic Simulator",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/652620/header.jpg?t=1565040266",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6189,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
   "657580": {
     "id": 657580,
     "is_free": false,
@@ -1616,6 +2304,33 @@
     "release_date": "9999999999999",
     "release_str": "TBD"
   },
+  "691790": {
+    "id": 691790,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Arcadian Atlas",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/691790/header.jpg?t=1538149779",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5152,
+    "release_date": "9999999999999",
+    "release_str": "coming soon~"
+  },
   "698670": {
     "id": 698670,
     "is_free": false,
@@ -1643,6 +2358,55 @@
     "steam_followers": 30727,
     "release_date": "9999999999999",
     "release_str": "TBD"
+  },
+  "700060": {
+    "id": 700060,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Space Station Continuum",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/700060/header.jpg?t=1533142228",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5999,
+    "release_date": "9999999999999",
+    "release_str": "TBC"
+  },
+  "715220": {
+    "id": 715220,
+    "is_free": true,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Free to Play"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Ironsight",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/715220/header.jpg?t=1562617656",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6286,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
   },
   "732050": {
     "id": 732050,
@@ -1672,6 +2436,29 @@
     "release_date": "9999999999999",
     "release_str": "Coming Soon"
   },
+  "737020": {
+    "id": 737020,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Farm&Fix 2020",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/737020/header.jpg?t=1565275762",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7490,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
   "753640": {
     "id": 753640,
     "is_free": false,
@@ -1693,6 +2480,29 @@
     "score": "0.00",
     "metacritic": 85,
     "steam_followers": 12071,
+    "release_date": "9999999999999",
+    "release_str": "TBD"
+  },
+  "753650": {
+    "id": 753650,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Due Process",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/753650/header.jpg?t=1555114501",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5316,
     "release_date": "9999999999999",
     "release_str": "TBD"
   },
@@ -1773,6 +2583,32 @@
     "release_date": "9999999999999",
     "release_str": "Prepping for the release"
   },
+  "762220": {
+    "id": 762220,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Afterparty",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/762220/header.jpg?t=1552072298",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5470,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "768200": {
     "id": 768200,
     "is_free": false,
@@ -1851,6 +2687,108 @@
     "release_date": "9999999999999",
     "release_str": "Coming Soon"
   },
+  "774291": {
+    "id": 774291,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "Action",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Last Man Sitting",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/774291/header.jpg?t=1549039893",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6417,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
+  "789150": {
+    "id": 789150,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Casual",
+      "Indie",
+      "Massively Multiplayer"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Mask of Fury",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/789150/header.jpg?t=1565138793",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5288,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon in 2019!"
+  },
+  "792300": {
+    "id": 792300,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "The Beast Inside",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/792300/header.jpg?t=1563225393",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7986,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "796530": {
+    "id": 796530,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Indie",
+      "Massively Multiplayer",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "PROXIMA ROYALE",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/796530/header.jpg?t=1561844751",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5851,
+    "release_date": "9999999999999",
+    "release_str": "coming soon"
+  },
   "813780": {
     "id": 813780,
     "is_free": false,
@@ -1925,6 +2863,131 @@
     "steam_followers": 27484,
     "release_date": "9999999999999",
     "release_str": "TBA"
+  },
+  "837470": {
+    "id": 837470,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Untitled Goose Game",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/837470/header.jpg?t=1560190877",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5955,
+    "release_date": "9999999999999",
+    "release_str": "TBD"
+  },
+  "840820": {
+    "id": 840820,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Ready Or Not",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/840820/header.jpg?t=1562724526",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7603,
+    "release_date": "9999999999999",
+    "release_str": "Q4 2020"
+  },
+  "841190": {
+    "id": 841190,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Honey, I Joined a Cult",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/841190/header.jpg?t=1559316540",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5306,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soonish"
+  },
+  "842100": {
+    "id": 842100,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Daymare: 1998",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/842100/header.jpg?t=1560911256",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6427,
+    "release_date": "9999999999999",
+    "release_str": "Summer 2019"
+  },
+  "842180": {
+    "id": 842180,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Indie",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Prison Simulator",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/842180/header.jpg?t=1563964361",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6253,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
   },
   "844980": {
     "id": 844980,
@@ -2028,6 +3091,132 @@
     "steam_followers": 70123,
     "release_date": "9999999999999",
     "release_str": "2019-ish"
+  },
+  "867290": {
+    "id": 867290,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Adventure",
+      "Casual",
+      "RPG",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Crossroads Inn",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/867290/header.jpg?t=1565357873",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7869,
+    "release_date": "9999999999999",
+    "release_str": "COMING 2019"
+  },
+  "867400": {
+    "id": 867400,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Massively Multiplayer"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Out of Reach: Treasure Royale",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/867400/header.jpg?t=1556053933",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5822,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "868270": {
+    "id": 868270,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Massively Multiplayer"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "The Cycle",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/868270/header.jpg?t=1553192131",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5239,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
+  "874390": {
+    "id": 874390,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "Indie",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "The Battle of Polytopia",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/874390/header.jpg?t=1560894796",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5834,
+    "release_date": "9999999999999",
+    "release_str": "Fall 2019"
+  },
+  "878670": {
+    "id": 878670,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Shenmue III",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/878670/header.jpg?t=1562925420",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6655,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
   },
   "881100": {
     "id": 881100,
@@ -2156,6 +3345,32 @@
     "release_date": "9999999999999",
     "release_str": "Coming Soon"
   },
+  "913740": {
+    "id": 913740,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac"
+    ],
+    "genres": [
+      "Violent",
+      "Indie",
+      "RPG"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "WORLD OF HORROR",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/913740/header.jpg?t=1558890772",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5359,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "913780": {
     "id": 913780,
     "is_free": false,
@@ -2233,6 +3448,31 @@
     "steam_followers": 14013,
     "release_date": "9999999999999",
     "release_str": "Coming soon"
+  },
+  "923570": {
+    "id": 923570,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Eternal Radiance",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/923570/header.jpg?t=1563008835",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5445,
+    "release_date": "9999999999999",
+    "release_str": "Late 2019"
   },
   "937450": {
     "id": 937450,
@@ -2314,6 +3554,31 @@
     "release_date": "9999999999999",
     "release_str": "Q4 2019"
   },
+  "964020": {
+    "id": 964020,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Make Your Kingdom",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/964020/header.jpg?t=1561726879",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6893,
+    "release_date": "9999999999999",
+    "release_str": "2019? Follow this page to get news"
+  },
   "969990": {
     "id": 969990,
     "is_free": false,
@@ -2338,6 +3603,39 @@
     "steam_followers": 11153,
     "release_date": "9999999999999",
     "release_str": "(When) I'm ready!"
+  },
+  "974420": {
+    "id": 974420,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Casual",
+      "Free to Play",
+      "Indie",
+      "Massively Multiplayer",
+      "Racing",
+      "RPG",
+      "Simulation",
+      "Sports",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "SEXY GIRLS",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/974420/header.jpg?t=1553502294",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5426,
+    "release_date": "9999999999999",
+    "release_str": "Summer 2019"
   },
   "975370": {
     "id": 975370,
@@ -2387,6 +3685,32 @@
     "steam_followers": 255182,
     "release_date": "9999999999999",
     "release_str": "Coming Soon"
+  },
+  "977720": {
+    "id": 977720,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Indie",
+      "RPG",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Starpoint Gemini 3",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/977720/header.jpg?t=1565398855",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 7109,
+    "release_date": "9999999999999",
+    "release_str": "TBA 2019"
   },
   "977880": {
     "id": 977880,
@@ -2442,6 +3766,30 @@
     "release_date": "9999999999999",
     "release_str": "Wishlist and follow to get notified!"
   },
+  "985830": {
+    "id": 985830,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "SUCCUBUS",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/985830/header.jpg?t=1560859246",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6600,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
   "987720": {
     "id": 987720,
     "is_free": false,
@@ -2465,6 +3813,55 @@
     "steam_followers": 14463,
     "release_date": "9999999999999",
     "release_str": "TBA"
+  },
+  "998400": {
+    "id": 998400,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Casual",
+      "Indie",
+      "Simulation"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Trans-Siberian Railway Simulator",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/998400/header.jpg?t=1563964470",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6028,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "1000410": {
+    "id": 1000410,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "WRATH: Aeon of Ruin",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1000410/header.jpg?t=1560762385",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5745,
+    "release_date": "9999999999999",
+    "release_str": "SUMMER 2019"
   },
   "1016800": {
     "id": 1016800,
@@ -2492,6 +3889,29 @@
     "steam_followers": 15626,
     "release_date": "9999999999999",
     "release_str": "Autumn 2019"
+  },
+  "1017900": {
+    "id": 1017900,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Age of Empires: Definitive Edition",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1017900/header.jpg?t=1564434526",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 69,
+    "steam_followers": 7842,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
   },
   "1029780": {
     "id": 1029780,
@@ -2570,6 +3990,57 @@
     "release_date": "9999999999999",
     "release_str": "Early Access Summer 2019"
   },
+  "1035120": {
+    "id": 1035120,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Lust from Beyond",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1035120/header.jpg?t=1563546191",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5448,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "1043810": {
+    "id": 1043810,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Tactical Breach Wizards",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1043810/header.jpg?t=1557307991",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6266,
+    "release_date": "9999999999999",
+    "release_str": "When it's done"
+  },
   "1051440": {
     "id": 1051440,
     "is_free": false,
@@ -2590,6 +4061,58 @@
     "score": "0.00",
     "metacritic": 0,
     "steam_followers": 8040,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
+  },
+  "1061930": {
+    "id": 1061930,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Cyber City",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1061930/header.jpg?t=1564335844",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6151,
+    "release_date": "9999999999999",
+    "release_str": "TBA"
+  },
+  "1062000": {
+    "id": 1062000,
+    "is_free": false,
+    "platforms": [
+      "Windows",
+      "Mac",
+      "Linux"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Starmancer",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1062000/header.jpg?t=1560187155",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5222,
     "release_date": "9999999999999",
     "release_str": "Coming Soon"
   },
@@ -2619,6 +4142,57 @@
     "release_date": "9999999999999",
     "release_str": "Q4 2019"
   },
+  "1076750": {
+    "id": 1076750,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Indie",
+      "Simulation",
+      "Strategy",
+      "Early Access"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Dream Engines: Nomad Cities",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1076750/header.jpg?t=1561871471",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5880,
+    "release_date": "9999999999999",
+    "release_str": "Wishlist &amp; Follow to hear first"
+  },
+  "1082200": {
+    "id": 1082200,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "ASTRO",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1082200/header.jpg?t=1564488172",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 6516,
+    "release_date": "9999999999999",
+    "release_str": "Coming soon"
+  },
   "1086940": {
     "id": 1086940,
     "is_free": false,
@@ -2643,5 +4217,28 @@
     "steam_followers": 56992,
     "release_date": "9999999999999",
     "release_str": "To Be Announced"
+  },
+  "1097840": {
+    "id": 1097840,
+    "is_free": false,
+    "platforms": [
+      "Windows"
+    ],
+    "genres": [
+      "Action"
+    ],
+    "median_forever": 0,
+    "ccu": 0,
+    "current_price": 0,
+    "current_discount": 0,
+    "type": "game",
+    "title": "Gears 5",
+    "header_image": "https://steamcdn-a.akamaihd.net/steam/apps/1097840/header.jpg?t=1562643010",
+    "total_reviews": 0,
+    "score": "0.00",
+    "metacritic": 0,
+    "steam_followers": 5022,
+    "release_date": "9999999999999",
+    "release_str": "Coming Soon"
   }
 }
