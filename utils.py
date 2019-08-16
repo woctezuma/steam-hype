@@ -1,48 +1,4 @@
 import json
-import time
-
-import requests
-
-
-def get_steam_hype_url():
-    # This is not my API. Please use with moderation!
-
-    url = 'https://steamhype-api.herokuapp.com/calendar'
-
-    return url
-
-
-def get_time_stamp():
-    time_stamp = int(time.time() * 1000)
-
-    return time_stamp
-
-
-def get_steam_hype_params(num_followers=0):
-    params = dict()
-
-    params['start'] = get_time_stamp()
-    params['current'] = 0
-    params['followers'] = num_followers
-    params['includedlc'] = 'false'
-    params['price'] = 100
-    params['discount'] = 0
-    params['reviews'] = 0
-    params['score'] = 0
-
-    return params
-
-
-def request_data(params=None):
-    if params is None:
-        params = get_steam_hype_params()
-
-    resp_data = requests.get(url=get_steam_hype_url(),
-                             params=params)
-
-    result = resp_data.json()
-
-    return result
 
 
 def get_data_folder():
@@ -86,33 +42,6 @@ def save_results(results,
     return
 
 
-def batch_request_data(params,
-                       verbose=False):
-    results = dict()
-
-    while True:
-        print('Request n°{}'.format(params['current'] + 1))
-
-        result = request_data(params)
-
-        if len(result) == 0:
-            break
-        else:
-            for game in result:
-                app_id = game['id']
-                results[app_id] = game
-
-            params['current'] += 1
-
-    if verbose:
-        print(results)
-
-    save_results(results=results,
-                 file_name=get_output_file_name())
-
-    return results
-
-
 def get_steamdb_url(app_id):
     url = 'https://steamdb.info/app/' + str(app_id) + '/'
 
@@ -131,19 +60,11 @@ def print_formatted_results(results):
                                                                    game['id'],
                                                                    get_steamdb_url(app_id),
                                                                    game['steam_followers']))
-    return
+    return True
 
 
 def main():
-    load_from_disk = True,
-
-    num_followers = 8000
-    params = get_steam_hype_params(num_followers=num_followers)
-
-    if load_from_disk:
-        results = load_results()
-    else:
-        results = batch_request_data(params=params)
+    results = load_results()
 
     print_formatted_results(results)
 
