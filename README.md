@@ -35,7 +35,7 @@ python utils.py
 
 ## Results
 
-Upcoming games with more than 8,000 followers (as of August 15, 2019) are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
+Results are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
 
 ## References
 
