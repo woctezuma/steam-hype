@@ -43,6 +43,13 @@ python compare_to_top_wishlists.py
 
 Results are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
 
+The [rank-order correlation](https://en.wikipedia.org/wiki/Rank_correlation) between the top followed games (depth=166) and the top wishlisted games is slightly positive:
+-   [Spearman rho](http://scipy.github.io/devdocs/generated/scipy.stats.spearmanr.html#scipy.stats.spearmanr) coefficient ~ 0.130
+-   [Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau) coefficient ~ 0.087
+-   [Weighted Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau) coefficient ~ 0.009
+-   Average overlap ~ 61.7%
+-   [Rank-biased overlap](https://github.com/dlukes/rbo) ~ 62.3%
+
 ## References
 
 -   [A tweet by the game dev Lars Doucet](https://twitter.com/larsiusprime/status/1159475890004385793)
