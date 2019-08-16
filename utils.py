@@ -13,16 +13,41 @@ def get_output_file_name():
     return file_name
 
 
+def get_manual_wishlist_snapshot_file_name():
+    file_name = get_data_folder() + 'top_wishlists.json'
+
+    return file_name
+
+
+def load_json(file_name=None,
+              verbose=False):
+    with open(file_name, 'r') as f:
+        data = json.load(f)
+
+    if verbose:
+        print('Loading {} games.'.format(len(data)))
+
+    return data
+
+
+def load_manual_wishlist_snapshot(file_name=None,
+                                  verbose=True):
+    if file_name is None:
+        file_name = get_manual_wishlist_snapshot_file_name()
+
+    manual_wishlist_snapshot = load_json(file_name=file_name,
+                                         verbose=verbose)
+
+    return manual_wishlist_snapshot
+
+
 def load_results(file_name=None,
                  verbose=True):
     if file_name is None:
         file_name = get_output_file_name()
 
-    with open(file_name, 'r') as f:
-        results = json.load(f)
-
-    if verbose:
-        print('Loading {} games.'.format(len(results)))
+    results = load_json(file_name=file_name,
+                        verbose=verbose)
 
     return results
 

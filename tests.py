@@ -18,6 +18,19 @@ class TestUtilsMethods(unittest.TestCase):
         file_name = utils.get_output_file_name()
         self.assertGreater(len(file_name), 0)
 
+    def test_get_manual_wishlist_snapshot_file_name(self):
+        file_name = utils.get_manual_wishlist_snapshot_file_name()
+        self.assertGreater(len(file_name), 0)
+
+    def test_load_json(self):
+        file_name = utils.get_output_file_name()
+        loaded_data = utils.load_json(file_name, verbose=True)
+        self.assertGreater(len(loaded_data), 0)
+
+    def test_load_manual_wishlist_snapshot(self):
+        manual_wishlist_snapshot = utils.load_manual_wishlist_snapshot()
+        self.assertGreater(len(manual_wishlist_snapshot), 0)
+
     def test_load_results(self):
         results = utils.load_results()
         self.assertGreater(len(results), 0)
