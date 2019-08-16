@@ -75,10 +75,12 @@ def main(verbose=True):
         print('Top wishlists: {}'.format(top_wishlists))
 
     top_follows, top_wishlists = trim_rankings(top_follows,
-                                               top_wishlists)
+                                               top_wishlists,
+                                               depth=None)
 
     compute_several_rank_correlations(top_follows,
-                                      top_wishlists)
+                                      top_wishlists,
+                                      rbo_parameter=0.99)
 
     return True
 
