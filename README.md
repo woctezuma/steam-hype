@@ -21,8 +21,16 @@ pip install -r requirements.txt
 
 ## Usage
 
+To download data:
+
 ```bash
-python main.py
+python download_hype.py
+```
+
+To print formatted output:
+
+```bash
+python utils.py
 ```
 
 ## Results
