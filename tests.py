@@ -96,5 +96,11 @@ class TestDownloadHypeMethods(unittest.TestCase):
                                            save_results_to_disk=False))
 
 
+class TestCompareToTopWishlistsMethods(unittest.TestCase):
+
+    def test_main(self):
+        self.assertTrue(compare_to_top_wishlists.main())
+
+
 if __name__ == '__main__':
     unittest.main()
