@@ -8,8 +8,8 @@ This repository contains data about games with:
 
 ### Wishlists
 
-The file `top_wishlists.json` is a manual compilation of [the top 100 most wishlisted upcoming Steam games](https://store.steampowered.com/search/?filter=popularwishlist)
-(the first four pages), as of August 16, 2019.
+The file `top_wishlists.json` is a manual compilation of [the top 200 most wishlisted upcoming Steam games](https://store.steampowered.com/search/?filter=popularwishlist)
+(the first eight pages), as of August 16, 2019.
 
 ### Followers
 
