@@ -33,6 +33,12 @@ To print formatted output:
 python utils.py
 ```
 
+To compare top followed games to top wishlisted games:
+
+```bash
+python compare_to_top_wishlists.py
+``` 
+
 ## Results
 
 Results are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
