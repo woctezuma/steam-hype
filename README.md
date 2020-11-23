@@ -27,6 +27,8 @@ Please refer to [this Colab notebook][colab-notebook-steam-hype] to rely on Stea
 
 ---
 
+Previously, when SteamHype.com was up, usage was as follows.
+
 To download data:
 
 ```bash
