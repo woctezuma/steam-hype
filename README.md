@@ -21,7 +21,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-As of November 2020, SteamHype.com is down.please refer to [this Colab notebook][colab-notebook-steam-hype] to rely on SteamDB.
+As of November 2020, SteamHype.com is down.
+Please refer to [this Colab notebook][colab-notebook-steam-hype] to rely on SteamDB.
 [![Open In Colab][colab-badge]][colab-notebook-steam-hype]
 
 ---
