@@ -21,6 +21,11 @@ pip install -r requirements.txt
 
 ## Usage
 
+As of November 2020, SteamHype.com is down.please refer to [this Colab notebook][colab-notebook-steam-hype] to rely on SteamDB.
+[![Open In Colab][colab-badge]][colab-notebook-steam-hype]
+
+---
+
 To download data:
 
 ```bash
@@ -88,3 +93,6 @@ The [rank-order correlation][wikipedia-correlation] between the top followed gam
 
 [thexpaw-tweet]: <https://twitter.com/thexpaw/status/1330805825355591681>
 [steamdb-hype]: <https://steamdb.info/upcoming/?hype>
+
+[colab-notebook-steam-hype]: <https://colab.research.google.com/github/woctezuma/steam-hype/blob/master/steam_hype.ipynb>
+[colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
