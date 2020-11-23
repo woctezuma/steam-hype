@@ -6,7 +6,7 @@
 [![Code coverage][codecov-image]][codecov]
 [![Code Quality][codacy-image]][codacy]
 
-![Illustration](https://raw.githubusercontent.com/wiki/woctezuma/steam-hype/img/ranking_2019_08_15.png)
+![Illustration][wiki-illustration]
 
 This repository contains Python code to find upcoming Steam games with many followers.
 
@@ -41,9 +41,9 @@ python compare_to_top_wishlists.py
 
 ## Results
 
-Results are shown [on the Wiki](https://github.com/woctezuma/steam-hype/wiki/Results).
+Results are shown [on the Wiki][wiki-results].
 
-The [rank-order correlation](https://en.wikipedia.org/wiki/Rank_correlation) between the top followed games (depth=166) and the top wishlisted games is slightly positive:
+The [rank-order correlation][wikipedia-correlation] between the top followed games (depth=166) and the top wishlisted games is slightly positive:
 -   [Spearman rho](http://scipy.github.io/devdocs/generated/scipy.stats.spearmanr.html#scipy.stats.spearmanr) coefficient ~ 0.130
 -   [Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau) coefficient ~ 0.087
 -   [Weighted Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau) coefficient ~ 0.009
@@ -52,11 +52,13 @@ The [rank-order correlation](https://en.wikipedia.org/wiki/Rank_correlation) bet
 
 ## References
 
--   [A tweet by the game dev Lars Doucet](https://twitter.com/larsiusprime/status/1159475890004385793)
--   [A blog post by the indie consultant Simon Carless](https://gamediscoverability.substack.com/p/steams-follower-counts-hidden-in)
--   An official ranking of [the most wishlisted upcoming Steam games](https://store.steampowered.com/search/?filter=popularwishlist)
--   [SteamDB](https://steamdb.info/upcoming/)
--   [Steam Hype API](https://steamhype.com/calendar), which is not my work, and which my script relies on.
+-   [A tweet by the game dev Lars Doucet][larsiusprime-tweet]
+-   [A blog post by the indie consultant Simon Carless][gamediscoverability]
+-   An official ranking of [the most wishlisted upcoming Steam games][steam-popularwishlist]
+-   SteamDB:
+    - upcoming games [clustered by release date][steamdb-upcoming],
+    - upcoming games [sorted by descending number of followers][steamdb-hype], after [this tweet][thexpaw-tweet] in November 2020.
+-   [Steam Hype API][steamhype-api], which is not my work, and which my script relies on. **Edit**: As of November 2020, the API is unavailable.
 
 <!-- Definitions -->
 
@@ -73,3 +75,16 @@ The [rank-order correlation](https://en.wikipedia.org/wiki/Rank_correlation) bet
 [codacy]: <https://www.codacy.com/app/woctezuma/steam-hype>
 [codacy-image]: <https://api.codacy.com/project/badge/Grade/dee72123ee614a8c9f38590830803a44>
 
+[wiki-illustration]: <https://raw.githubusercontent.com/wiki/woctezuma/steam-hype/img/ranking_2019_08_15.png>
+[wiki-results]: <https://github.com/woctezuma/steam-hype/wiki/Results>
+
+[wikipedia-correlation]: <https://en.wikipedia.org/wiki/Rank_correlation>
+
+[larsiusprime-tweet]: <https://twitter.com/larsiusprime/status/1159475890004385793>
+[gamediscoverability]: <https://gamediscoverability.substack.com/p/steams-follower-counts-hidden-in>
+[steam-popularwishlist]: <https://store.steampowered.com/search/?filter=popularwishlist>
+[steamdb-upcoming]: <https://steamdb.info/upcoming/>
+[steamhype-api]: <https://steamhype.com/calendar>
+
+[thexpaw-tweet]: <https://twitter.com/thexpaw/status/1330805825355591681>
+[steamdb-hype]: <https://steamdb.info/upcoming/?hype>
