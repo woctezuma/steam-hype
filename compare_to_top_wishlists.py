@@ -159,4 +159,4 @@ def main(version=1, verbose=True):
 
 
 if __name__ == '__main__':
-    main()
+    main(version=2)
