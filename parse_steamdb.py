@@ -1,3 +1,4 @@
+from download_steamdb import save_steamdb_to_disk
 from utils import get_steamdb_filename
 
 
@@ -10,6 +11,7 @@ def parse_steamdb_app_id(line):
 
 
 def load_steamdb_ranking():
+    save_steamdb_to_disk()
     with open(get_steamdb_filename(), 'r', encoding='utf8') as f:
         d = f.readlines()
     steamdb_ranking = [parse_steamdb_app_id(l) for l in filter_steamdb_document(d)]
