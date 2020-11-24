@@ -27,9 +27,17 @@ def trim_rankings(ranking_A,
     return ranking_A, ranking_B
 
 
+from convert_ranking import list_app_ids, convert_ranking_to_vector_of_ranks, convert_ranking_to_vector_of_scores
+
+
 def compute_rho(ranking_A, ranking_B):
-    rho, p_value = stats.spearmanr(ranking_A,
-                                   ranking_B)
+    # Arrays of ranks
+    app_ids = list_app_ids(ranking_A, ranking_B, verbose=True)
+    x = convert_ranking_to_vector_of_ranks(ranking_A, app_ids=app_ids)
+    y = convert_ranking_to_vector_of_ranks(ranking_B, app_ids=app_ids)
+    # NB: we would get the same rho with arrays of scores.
+
+    rho, p_value = stats.spearmanr(x, y)
 
     print('\nSpearman rank-order correlation coefficient: {:.4f}'.format(rho))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
@@ -38,8 +46,13 @@ def compute_rho(ranking_A, ranking_B):
 
 
 def compute_tau(ranking_A, ranking_B):
-    tau, p_value = stats.kendalltau(ranking_A,
-                                    ranking_B)
+    # Arrays of ranks
+    app_ids = list_app_ids(ranking_A, ranking_B)
+    x = convert_ranking_to_vector_of_ranks(ranking_A, app_ids=app_ids)
+    y = convert_ranking_to_vector_of_ranks(ranking_B, app_ids=app_ids)
+    # NB: we would get the same tau with arrays of scores.
+
+    tau, p_value = stats.kendalltau(x, y)
 
     print('\nKendall rank-order correlation coefficient: {:.4f}'.format(tau))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
@@ -48,8 +61,19 @@ def compute_tau(ranking_A, ranking_B):
 
 
 def compute_weighted_tau(ranking_A, ranking_B):
-    weighted_tau, p_value = stats.weightedtau(ranking_A,
-                                              ranking_B)
+    # Arrays of scores
+    app_ids = list_app_ids(ranking_A, ranking_B)
+    x = convert_ranking_to_vector_of_scores(ranking_A, app_ids=app_ids)
+    y = convert_ranking_to_vector_of_scores(ranking_B, app_ids=app_ids)
+    # NB: it is important NOT to feed arrays of ranks for the weighted tau!
+    #
+    # > Note that if you are computing the weighted on arrays of ranks, rather than of scores (i.e., a larger value
+    # > implies a lower rank) you must negate the ranks, so that elements of higher rank are associated with a larger
+    # > value.
+    #
+    # Reference: http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau
+
+    weighted_tau, p_value = stats.weightedtau(x, y)
 
     print('\nWeighted Kendall rank-order correlation coefficient: {:.4f}'.format(weighted_tau))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
