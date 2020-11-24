@@ -2,7 +2,89 @@ import unittest
 
 import compare_to_top_wishlists
 import download_hype
+import download_steam
+import download_steamdb
+import parse_steam
+import parse_steamdb
 import utils
+
+
+class TestParseSteamMethods(unittest.TestCase):
+    def test_filter_steam_document(self):
+        lines = ['nope', 'blabla data-ds-appid="1091500" blabla', 'nope']
+        filtered_lines = parse_steam.filter_steam_document(lines)
+        self.assertEqual(len(lines), 3)
+        self.assertEqual(len(filtered_lines), 1)
+
+    def test_parse_steam_app_id(self):
+        line = 'blabla data-ds-appid="1091500" blabla'
+        app_id = parse_steam.parse_steam_app_id(line)
+        self.assertEqual(app_id, 1091500)
+
+    def test_load_steam_ranking(self):
+        ranking = parse_steam.load_steam_ranking()
+        self.assertEqual(len(ranking), 250)
+
+    def test_main(self):
+        self.assertTrue(parse_steam.main())
+
+
+class TestParseSteamDBMethods(unittest.TestCase):
+    def test_filter_steamdb_document(self):
+        lines = ['nope', '<a href="/app/1091500/" class="b">Cyberpunk 2077</a>', 'nope']
+        filtered_lines = parse_steamdb.filter_steamdb_document(lines)
+        self.assertEqual(len(lines), 3)
+        self.assertEqual(len(filtered_lines), 1)
+
+    def test_parse_steamdb_app_id(self):
+        line = '<a href="/app/1091500/" class="b">Cyberpunk 2077</a>'
+        app_id = parse_steamdb.parse_steamdb_app_id(line)
+        self.assertEqual(app_id, 1091500)
+
+    def test_load_steamdb_ranking(self):
+        ranking = parse_steamdb.load_steamdb_ranking()
+        self.assertEqual(len(ranking), 250)
+
+    def test_main(self):
+        self.assertTrue(parse_steamdb.main())
+
+
+class TestDownloadSteamMethods(unittest.TestCase):
+    def test_get_steam_url(self):
+        url = download_steam.get_steam_url()
+        self.assertGreater(len(url), 0)
+
+    def test_download_steam(self):
+        text_aggregate = download_steam.download_steam(num_pages=1)
+        self.assertGreater(text_aggregate, 0)
+
+    def test_save_steam_to_disk(self):
+        self.assertTrue(download_steam.save_steam_to_disk(num_pages=1))
+
+    def test_main(self):
+        self.assertTrue(download_steam.main())
+
+
+class TestDownloadSteamDBMethods(unittest.TestCase):
+
+    def test_get_steamdb_url(self):
+        url = download_steamdb.get_steamdb_url()
+        self.assertGreater(len(url), 0)
+
+    def test_get_headers(self):
+        headers = download_steamdb.get_headers()
+        self.assertIn('user-agent', headers)
+        self.assertGreater(len(headers['user-agent']), 0)
+
+    def test_download_steamdb(self):
+        text_aggregate = download_steamdb.download_steamdb()
+        self.assertGreater(text_aggregate, 0)
+
+    def test_save_steamdb_to_disk(self):
+        self.assertTrue(download_steamdb.save_steamdb_to_disk())
+
+    def test_main(self):
+        self.assertTrue(download_steamdb.main())
 
 
 class TestUtilsMethods(unittest.TestCase):
@@ -14,6 +96,18 @@ class TestUtilsMethods(unittest.TestCase):
     def test_get_data_folder(self):
         folder_name = utils.get_data_folder()
         self.assertGreater(len(folder_name), 0)
+
+    def test_get_data_folder_v2(self):
+        folder_name = utils.get_data_folder(version=2)
+        self.assertEqual(folder_name, 'data_v2/')
+
+    def test_get_steam_filename(self):
+        file_name = utils.get_steam_filename()
+        self.assertTrue(file_name.endswith('steam.txt'))
+
+    def test_get_steamdb_filename(self):
+        file_name = utils.get_steamdb_filename()
+        self.assertTrue(file_name.endswith('steamdb.txt'))
 
     def test_get_output_file_name(self):
         file_name = utils.get_output_file_name()
