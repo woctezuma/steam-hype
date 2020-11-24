@@ -107,6 +107,43 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
 
         self.assertEqual(len(ranking_A), len(ranking_B))
 
+    def test_compute_rho(self):
+        ranking_A = [12, 2, 1, 12, 2]
+        ranking_B = [1, 4, 7, 1, 0]
+
+        rho, p_value = compare_to_top_wishlists.compute_rho(ranking_A,
+                                                            ranking_B)
+
+        self.assertTrue(-1 <= rho <= 1)
+
+    def test_compute_tau(self):
+        ranking_A = [12, 2, 1, 12, 2]
+        ranking_B = [1, 4, 7, 1, 0]
+
+        tau, p_value = compare_to_top_wishlists.compute_tau(ranking_A,
+                                                            ranking_B)
+
+        self.assertTrue(-1 <= tau <= 1)
+
+    def test_compute_weighted_tau(self):
+        ranking_A = [12, 2, 1, 12, 2]
+        ranking_B = [1, 4, 7, 1, 0]
+
+        weighted_tau, p_value = compare_to_top_wishlists.compute_weighted_tau(ranking_A,
+                                                                              ranking_B)
+
+        self.assertTrue(-1 <= weighted_tau <= 1)
+
+    def test_compute_rank_biased_overlap(self):
+        ranking_A = [12, 2, 1, 12, 2]
+        ranking_B = [1, 4, 7, 1, 0]
+
+        rbo_estimate, reference_overlap = compare_to_top_wishlists.compute_rank_biased_overlap(ranking_A,
+                                                                                               ranking_B)
+
+        self.assertTrue(0 <= rbo_estimate <= 1)
+        self.assertTrue(0 <= reference_overlap <= 1)
+
     def test_compute_several_rank_correlations(self):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
