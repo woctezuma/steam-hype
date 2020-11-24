@@ -1,10 +1,21 @@
 import json
 
 
-def get_data_folder():
+def get_data_folder(version=1):
     folder_name = 'data/'
 
+    if version > 1:
+        folder_name = 'data_v2/'
+
     return folder_name
+
+
+def get_steam_filename(version=2):
+    return get_data_folder(version=version) + 'steam.txt'
+
+
+def get_steamdb_filename(version=2):
+    return get_data_folder(version=version) + 'steamdb.txt'
 
 
 def get_output_file_name():
