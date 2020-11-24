@@ -52,9 +52,9 @@ def compute_several_rank_correlations(ranking_A,
                      ranking_B,
                      p=rbo_parameter)
 
-    rbo_lower_bound = rbo_output['min']
-    rbo_residual = rbo_output['res']
-    rbo_estimate = rbo_output['ext']
+    rbo_lower_bound = rbo_output.min
+    rbo_residual = rbo_output.res
+    rbo_estimate = rbo_output.ext
 
     reference_overlap = average_overlap(ranking_A,
                                         ranking_B)
