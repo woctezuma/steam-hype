@@ -6,6 +6,8 @@
 
 from scipy import stats
 
+from parse_steam import load_steam_ranking
+from parse_steamdb import load_steamdb_ranking
 from rbo import rbo, average_overlap
 from utils import sort_by_followers, load_manual_wishlist_snapshot
 
@@ -115,11 +117,22 @@ def compute_several_rank_correlations(ranking_A,
     return True
 
 
-def main(verbose=True):
+def load_data_v1():
     top_follows = sort_by_followers()
 
     top_wishlists = load_manual_wishlist_snapshot()
 
+    return top_follows, top_wishlists
+
+
+def load_data_v2():
+    top_follows = load_steamdb_ranking()
+    top_wishlists = load_steam_ranking()
+
+    return top_follows, top_wishlists
+
+
+def run_statistical_analysis(top_follows, top_wishlists, verbose=False):
     if verbose:
         print('Top follows: {}'.format(top_follows))
         print('Top wishlists: {}'.format(top_wishlists))
@@ -131,6 +144,16 @@ def main(verbose=True):
     compute_several_rank_correlations(top_follows,
                                       top_wishlists,
                                       rbo_parameter=0.99)
+    return True
+
+
+def main(version=1, verbose=True):
+    if version > 1:
+        top_follows, top_wishlists = load_data_v2()
+    else:
+        top_follows, top_wishlists = load_data_v1()
+
+    run_statistical_analysis(top_follows, top_wishlists, verbose=verbose)
 
     return True
 
