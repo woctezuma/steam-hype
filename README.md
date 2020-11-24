@@ -52,11 +52,18 @@ python compare_to_top_wishlists.py
 Results are shown [on the Wiki][wiki-results].
 
 The [rank-order correlation][wikipedia-correlation] between the top followed games (depth=166) and the top wishlisted games is slightly positive:
--   [Spearman rho](http://scipy.github.io/devdocs/generated/scipy.stats.spearmanr.html#scipy.stats.spearmanr) coefficient ~ 0.130
--   [Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau) coefficient ~ 0.087
--   [Weighted Kendall's tau](http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau) coefficient ~ 0.009
+-   [Spearman rho][scipy-rho] coefficient ~ 0.28
+-   [Kendall's tau][scipy-tau] coefficient ~ 0.19
+-   [Weighted Kendall's tau][scipy-wtau] coefficient ~ 0.60
 -   Average overlap ~ 61.7%
--   [Rank-biased overlap](https://github.com/dlukes/rbo) ~ 62.3%
+-   [Rank-biased overlap][github-rbo] ~ 62.3%
+
+As of November 2020, using SteamDB's hype (depth=250), as SteamHype.com is down:
+-   Spearman rho coefficient ~ 0.44
+-   Kendall's tau coefficient ~ 0.33
+-   Weighted Kendall's tau coefficient ~ 0.64
+-   Average overlap ~ 66.5%
+-   Rank-biased overlap ~ 68.0%
 
 ## References
 
@@ -90,6 +97,10 @@ The [rank-order correlation][wikipedia-correlation] between the top followed gam
 [wiki-results]: <https://github.com/woctezuma/steam-hype/wiki/Results>
 
 [wikipedia-correlation]: <https://en.wikipedia.org/wiki/Rank_correlation>
+[scipy-rho]: <http://scipy.github.io/devdocs/generated/scipy.stats.spearmanr.html#scipy.stats.spearmanr>
+[scipy-tau]: <http://scipy.github.io/devdocs/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau>
+[scipy-wtau]: <http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau>
+[github-rbo]: <https://github.com/dlukes/rbo>
 
 [larsiusprime-tweet]: <https://twitter.com/larsiusprime/status/1159475890004385793>
 [gamediscoverability]: <https://gamediscoverability.substack.com/p/steams-follower-counts-hidden-in>
