@@ -25,6 +25,16 @@ As of November 2020, SteamHype.com is down.
 Please refer to [this Colab notebook][colab-notebook-steam-hype] to rely on SteamDB.
 [![Open In Colab][colab-badge]][colab-notebook-steam-hype]
 
+Alternatively:
+```bash
+python compare_to_top_wishlists.py
+```
+or:
+```python
+import compare_to_top_wishlists
+
+compare_to_top_wishlists.main(version=2)
+``` 
 ---
 
 Previously, when SteamHype.com was up, usage was as follows.
@@ -43,8 +53,10 @@ python utils.py
 
 To compare top followed games to top wishlisted games:
 
-```bash
-python compare_to_top_wishlists.py
+```python
+import compare_to_top_wishlists
+
+compare_to_top_wishlists.main(version=1)
 ``` 
 
 ## Results
