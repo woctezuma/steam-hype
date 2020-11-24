@@ -284,8 +284,25 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         self.assertTrue(compare_to_top_wishlists.compute_several_rank_correlations(ranking_A,
                                                                                    ranking_B))
 
-    def test_main(self):
-        self.assertTrue(compare_to_top_wishlists.main())
+    def test_load_data_v1(self):
+        top_follows, top_wishlists = compare_to_top_wishlists.load_data_v1()
+        self.assertGreater(len(top_follows), 0)
+        self.assertGreater(len(top_wishlists), 0)
+
+    def test_load_data_v2(self):
+        top_follows, top_wishlists = compare_to_top_wishlists.load_data_v2()
+        self.assertGreater(len(top_follows), 0)
+        self.assertGreater(len(top_wishlists), 0)
+
+    def run_statistical_analysis(self):
+        top_follows, top_wishlists = compare_to_top_wishlists.load_data_v2()
+        self.assertTrue(compare_to_top_wishlists.run_statistical_analysis(top_follows, top_wishlists))
+
+    def test_main_v1(self):
+        self.assertTrue(compare_to_top_wishlists.main(version=1))
+
+    def test_main_v2(self):
+        self.assertTrue(compare_to_top_wishlists.main(version=2))
 
 
 if __name__ == '__main__':
