@@ -86,6 +86,7 @@ As of November 2020, using SteamDB's hype (depth=250), as SteamHype.com is down:
     - upcoming games [clustered by release date][steamdb-upcoming],
     - upcoming games [sorted by descending number of followers][steamdb-hype], after [this tweet][thexpaw-tweet] in November 2020.
 -   [Steam Hype API][steamhype-api], which is not my work, and which my script relies on. **Edit**: As of November 2020, the API is unavailable.
+-   [Webber, William, et al. *A similarity measure for indefinite rankings*. ACM Trans. on Information Systems 2010.][rbo-paper]
 
 <!-- Definitions -->
 
@@ -113,6 +114,7 @@ As of November 2020, using SteamDB's hype (depth=250), as SteamHype.com is down:
 [scipy-tau]: <http://scipy.github.io/devdocs/generated/scipy.stats.kendalltau.html#scipy.stats.kendalltau>
 [scipy-wtau]: <http://scipy.github.io/devdocs/generated/scipy.stats.weightedtau.html#scipy.stats.weightedtau>
 [github-rbo]: <https://github.com/dlukes/rbo>
+[rbo-paper]: <http://w.codalism.com/research/papers/wmz10_tois.pdf>
 
 [larsiusprime-tweet]: <https://twitter.com/larsiusprime/status/1159475890004385793>
 [gamediscoverability]: <https://gamediscoverability.substack.com/p/steams-follower-counts-hidden-in>
