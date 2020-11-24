@@ -1,6 +1,6 @@
 # Steam Hype
 
-[![Build status][build-image]][build]
+[![Build status with Github Action][build-image-action]][build-action]
 [![Updates][dependency-image]][pyup]
 [![Python 3][python3-image]][pyup]
 [![Code coverage][codecov-image]][codecov]
@@ -72,6 +72,9 @@ The [rank-order correlation][wikipedia-correlation] between the top followed gam
 
 [build]: <https://travis-ci.org/woctezuma/steam-hype>
 [build-image]: <https://travis-ci.org/woctezuma/steam-hype.svg?branch=master>
+
+[build-action]: <https://github.com/woctezuma/steam-hype/actions>
+[build-image-action]: <https://github.com/woctezuma/steam-hype/workflows/Python application/badge.svg?branch=master>
 
 [pyup]: <https://pyup.io/repos/github/woctezuma/steam-hype/>
 [dependency-image]: <https://pyup.io/repos/github/woctezuma/steam-hype/shield.svg>
