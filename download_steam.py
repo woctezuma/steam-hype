@@ -33,6 +33,7 @@ def save_steam_to_disk(num_pages=10):
 
 def main():
     save_steam_to_disk()
+    return True
 
 
 if __name__ == '__main__':

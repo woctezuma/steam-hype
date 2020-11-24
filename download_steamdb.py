@@ -34,6 +34,7 @@ def save_steamdb_to_disk():
 
 def main():
     save_steamdb_to_disk()
+    return True
 
 
 if __name__ == '__main__':

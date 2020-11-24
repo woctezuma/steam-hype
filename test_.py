@@ -56,7 +56,7 @@ class TestDownloadSteamMethods(unittest.TestCase):
 
     def test_download_steam(self):
         text_aggregate = download_steam.download_steam(num_pages=1)
-        self.assertGreater(text_aggregate, 0)
+        self.assertGreater(len(text_aggregate), 0)
 
     def test_save_steam_to_disk(self):
         self.assertTrue(download_steam.save_steam_to_disk(num_pages=1))
@@ -78,7 +78,7 @@ class TestDownloadSteamDBMethods(unittest.TestCase):
 
     def test_download_steamdb(self):
         text_aggregate = download_steamdb.download_steamdb()
-        self.assertGreater(text_aggregate, 0)
+        self.assertGreater(len(text_aggregate), 0)
 
     def test_save_steamdb_to_disk(self):
         self.assertTrue(download_steamdb.save_steamdb_to_disk())
