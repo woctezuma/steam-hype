@@ -51,7 +51,7 @@ python compare_to_top_wishlists.py
 
 Results are shown [on the Wiki][wiki-results].
 
-The [rank-order correlation][wikipedia-correlation] between the top followed games (depth=166) and the top wishlisted games is slightly positive:
+The [rank-order correlation][wikipedia-correlation] between the top followed games (depth=166) and the top wishlisted games is positive:
 -   [Spearman rho][scipy-rho] coefficient ~ 0.28
 -   [Kendall's tau][scipy-tau] coefficient ~ 0.19
 -   [Weighted Kendall's tau][scipy-wtau] coefficient ~ 0.60
