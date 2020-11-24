@@ -1,12 +1,51 @@
 import unittest
 
 import compare_to_top_wishlists
+import convert_ranking
 import download_hype
 import download_steam
 import download_steamdb
 import parse_steam
 import parse_steamdb
 import utils
+
+
+class TestConvertRankingMethods(unittest.TestCase):
+    def test_list_app_ids(self):
+        ranking_A = 'acbd'
+        ranking_B = 'aefg'
+        references = convert_ranking.list_app_ids(ranking_A, ranking_B, verbose=True)
+        self.assertEqual(len(references), 7)
+
+    def test_convert_ranking_for_scipy(self):
+        ranking = ["a", "c", "b", "d"]
+        references = convert_ranking.list_app_ids(ranking, [])
+        ranks = convert_ranking.convert_ranking_for_scipy(ranking, references, reverse_order=False)
+        self.assertEqual(len(ranks), len(ranking))
+        self.assertGreaterEqual(min(ranks), 1)
+        self.assertLessEqual(max(ranks), len(ranking) + 1)
+
+    def test_convert_ranking_to_vector_of_ranks(self):
+        ranking = ["a", "c", "b", "d"]
+        references = convert_ranking.list_app_ids(ranking, [])
+        ranks = convert_ranking.convert_ranking_to_vector_of_ranks(ranking, references)
+        self.assertEqual(len(ranks), len(ranking))
+        self.assertGreaterEqual(min(ranks), 1)
+        self.assertLessEqual(max(ranks), len(ranking) + 1)
+
+    def test_convert_ranking_to_vector_of_scores(self):
+        ranking = ["a", "c", "b", "d"]
+        references = convert_ranking.list_app_ids(ranking, [])
+        scores = convert_ranking.convert_ranking_to_vector_of_scores(ranking, references)
+        self.assertEqual(len(scores), len(ranking))
+        self.assertGreaterEqual(min(scores), 0)
+        self.assertLessEqual(max(scores), len(ranking))
+
+    def test_run_example(self):
+        self.assertTrue(convert_ranking.run_example())
+
+    def test_main(self):
+        self.assertTrue(convert_ranking.main())
 
 
 class TestParseSteamMethods(unittest.TestCase):
