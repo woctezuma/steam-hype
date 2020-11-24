@@ -39,7 +39,7 @@ def compute_rho(ranking_A, ranking_B):
 
     rho, p_value = stats.spearmanr(x, y)
 
-    print('\nSpearman rank-order correlation coefficient: {:.4f}'.format(rho))
+    print('Spearman rank-order correlation coefficient: {:.4f}'.format(rho))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
 
     return rho, p_value
@@ -54,7 +54,7 @@ def compute_tau(ranking_A, ranking_B):
 
     tau, p_value = stats.kendalltau(x, y)
 
-    print('\nKendall rank-order correlation coefficient: {:.4f}'.format(tau))
+    print('Kendall rank-order correlation coefficient: {:.4f}'.format(tau))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
 
     return tau, p_value
@@ -75,7 +75,7 @@ def compute_weighted_tau(ranking_A, ranking_B):
 
     weighted_tau, p_value = stats.weightedtau(x, y)
 
-    print('\nWeighted Kendall rank-order correlation coefficient: {:.4f}'.format(weighted_tau))
+    print('Weighted Kendall rank-order correlation coefficient: {:.4f}'.format(weighted_tau))
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
 
     return weighted_tau, p_value
@@ -93,7 +93,7 @@ def compute_rank_biased_overlap(ranking_A, ranking_B, rbo_parameter=0.99):
     reference_overlap = average_overlap(ranking_A,
                                         ranking_B)
 
-    print('\nRank-biased overlap estimate: {:.4f}'.format(rbo_estimate))
+    print('Rank-biased overlap estimate: {:.4f}'.format(rbo_estimate))
     print('Average overlap = {:.4f}'.format(reference_overlap))
 
     return rbo_estimate, reference_overlap
