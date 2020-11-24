@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 
 def get_data_folder(version=1):
@@ -6,6 +7,8 @@ def get_data_folder(version=1):
 
     if version > 1:
         folder_name = 'data_v2/'
+
+    Path(folder_name).mkdir(parents=True, exist_ok=True)
 
     return folder_name
 
