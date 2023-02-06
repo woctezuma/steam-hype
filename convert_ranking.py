@@ -11,7 +11,7 @@ def list_app_ids(ranking_A, ranking_B, verbose=False):
 def convert_ranking_for_scipy(ranking, app_ids, reverse_order=False):
     out_of_bound_rank = len(ranking) + 1
 
-    v = np.zeros(len(app_ids)).astype(np.int)
+    v = np.zeros(len(app_ids)).astype(np.int32)
     for i, app_id in enumerate(app_ids):
         try:
             # NB: ranks are between 1 and len(ranking)
