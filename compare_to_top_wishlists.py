@@ -8,8 +8,8 @@ from scipy import stats
 
 from parse_steam import load_steam_ranking
 from parse_steamdb import load_steamdb_ranking
-from rbo import rbo, average_overlap
-from utils import sort_by_followers, load_manual_wishlist_snapshot
+from rbo import average_overlap, rbo
+from utils import load_manual_wishlist_snapshot, sort_by_followers
 
 
 def trim_rankings(ranking_A, ranking_B, depth=None, verbose=True):
@@ -20,15 +20,15 @@ def trim_rankings(ranking_A, ranking_B, depth=None, verbose=True):
     ranking_B = ranking_B[:depth]
 
     if verbose:
-        print('\nTrimming rankings to depth = {}.'.format(depth))
+        print(f'\nTrimming rankings to depth = {depth}.')
 
     return ranking_A, ranking_B
 
 
 from convert_ranking import (
-    list_app_ids,
     convert_ranking_to_vector_of_ranks,
     convert_ranking_to_vector_of_scores,
+    list_app_ids,
 )
 
 
@@ -41,8 +41,8 @@ def compute_rho(ranking_A, ranking_B):
 
     rho, p_value = stats.spearmanr(x, y)
 
-    print('Spearman rank-order correlation coefficient: {:.4f}'.format(rho))
-    print('p-value to test for non-correlation: {:.4f}'.format(p_value))
+    print(f'Spearman rank-order correlation coefficient: {rho:.4f}')
+    print(f'p-value to test for non-correlation: {p_value:.4f}')
 
     return rho, p_value
 
@@ -56,8 +56,8 @@ def compute_tau(ranking_A, ranking_B):
 
     tau, p_value = stats.kendalltau(x, y)
 
-    print('Kendall rank-order correlation coefficient: {:.4f}'.format(tau))
-    print('p-value to test for non-correlation: {:.4f}'.format(p_value))
+    print(f'Kendall rank-order correlation coefficient: {tau:.4f}')
+    print(f'p-value to test for non-correlation: {p_value:.4f}')
 
     return tau, p_value
 
@@ -82,7 +82,7 @@ def compute_weighted_tau(ranking_A, ranking_B):
             weighted_tau,
         ),
     )
-    print('p-value to test for non-correlation: {:.4f}'.format(p_value))
+    print(f'p-value to test for non-correlation: {p_value:.4f}')
 
     return weighted_tau, p_value
 
@@ -96,8 +96,8 @@ def compute_rank_biased_overlap(ranking_A, ranking_B, rbo_parameter=0.99):
 
     reference_overlap = average_overlap(ranking_A, ranking_B)
 
-    print('Rank-biased overlap estimate: {:.4f}'.format(rbo_estimate))
-    print('Average overlap = {:.4f}'.format(reference_overlap))
+    print(f'Rank-biased overlap estimate: {rbo_estimate:.4f}')
+    print(f'Average overlap = {reference_overlap:.4f}')
 
     return rbo_estimate, reference_overlap
 
@@ -132,8 +132,8 @@ def load_data_v2():
 
 def run_statistical_analysis(top_follows, top_wishlists, verbose=False):
     if verbose:
-        print('Top follows: {}'.format(top_follows))
-        print('Top wishlists: {}'.format(top_wishlists))
+        print(f'Top follows: {top_follows}')
+        print(f'Top wishlists: {top_wishlists}')
 
     top_follows, top_wishlists = trim_rankings(top_follows, top_wishlists, depth=None)
 

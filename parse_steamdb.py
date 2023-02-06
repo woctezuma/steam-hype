@@ -12,10 +12,10 @@ def parse_steamdb_app_id(line):
 
 def load_steamdb_ranking():
     save_steamdb_to_disk()
-    with open(get_steamdb_filename(), 'r', encoding='utf8') as f:
+    with open(get_steamdb_filename(), encoding='utf8') as f:
         d = f.readlines()
     steamdb_ranking = [parse_steamdb_app_id(l) for l in filter_steamdb_document(d)]
-    print('[SteamDB] #apps = {}'.format(len(steamdb_ranking)))
+    print(f'[SteamDB] #apps = {len(steamdb_ranking)}')
     return steamdb_ranking
 
 

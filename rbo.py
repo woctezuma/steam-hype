@@ -29,12 +29,10 @@ problem yield the same result using both functions:
 
 """
 
-from __future__ import division
 
 import math
 from bisect import bisect_left
 from collections import namedtuple
-
 
 RBO = namedtuple("RBO", "min res ext")
 RBO.__doc__ += ": Result of full RBO analysis"

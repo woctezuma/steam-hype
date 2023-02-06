@@ -4,7 +4,7 @@ import numpy as np
 def list_app_ids(ranking_A, ranking_B, verbose=False):
     app_ids = sorted(set(ranking_A).union(ranking_B))
     if verbose:
-        print('#appIDs = {}'.format(len(app_ids)))
+        print(f'#appIDs = {len(app_ids)}')
     return app_ids
 
 

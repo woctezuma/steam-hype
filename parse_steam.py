@@ -13,10 +13,10 @@ def parse_steam_app_id(line):
 
 def load_steam_ranking():
     save_steam_to_disk()
-    with open(get_steam_filename(), 'r', encoding='utf8') as f:
+    with open(get_steam_filename(), encoding='utf8') as f:
         d = f.readlines()
     steam_ranking = [parse_steam_app_id(l) for l in filter_steam_document(d)]
-    print('[Steam] #apps = {}'.format(len(steam_ranking)))
+    print(f'[Steam] #apps = {len(steam_ranking)}')
     return steam_ranking
 
 

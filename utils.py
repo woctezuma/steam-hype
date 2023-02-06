@@ -34,11 +34,11 @@ def get_manual_wishlist_snapshot_file_name():
 
 
 def load_json(file_name=None, verbose=False):
-    with open(file_name, 'r') as f:
+    with open(file_name) as f:
         data = json.load(f)
 
     if verbose:
-        print('Loading {} games.'.format(len(data)))
+        print(f'Loading {len(data)} games.')
 
     return data
 
@@ -69,7 +69,7 @@ def save_results(results, file_name=None, verbose=True):
         json.dump(results, f)
 
     if verbose:
-        print('Saving {} games.'.format(len(results)))
+        print(f'Saving {len(results)} games.')
 
     return
 

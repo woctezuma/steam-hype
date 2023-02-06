@@ -20,7 +20,7 @@ def get_time_stamp():
 
 
 def get_steam_hype_params(num_followers=0):
-    params = dict()
+    params = {}
 
     params['start'] = get_time_stamp()
     params['current'] = 0
@@ -46,7 +46,7 @@ def request_data(params=None):
 
 
 def batch_request_data(params, save_results_to_disk=True, verbose=False):
-    results = dict()
+    results = {}
 
     while True:
         print('Request n°{}'.format(params['current'] + 1))
