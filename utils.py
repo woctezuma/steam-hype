@@ -33,8 +33,7 @@ def get_manual_wishlist_snapshot_file_name():
     return file_name
 
 
-def load_json(file_name=None,
-              verbose=False):
+def load_json(file_name=None, verbose=False):
     with open(file_name, 'r') as f:
         data = json.load(f)
 
@@ -44,31 +43,25 @@ def load_json(file_name=None,
     return data
 
 
-def load_manual_wishlist_snapshot(file_name=None,
-                                  verbose=True):
+def load_manual_wishlist_snapshot(file_name=None, verbose=True):
     if file_name is None:
         file_name = get_manual_wishlist_snapshot_file_name()
 
-    manual_wishlist_snapshot = load_json(file_name=file_name,
-                                         verbose=verbose)
+    manual_wishlist_snapshot = load_json(file_name=file_name, verbose=verbose)
 
     return manual_wishlist_snapshot
 
 
-def load_results(file_name=None,
-                 verbose=True):
+def load_results(file_name=None, verbose=True):
     if file_name is None:
         file_name = get_output_file_name()
 
-    results = load_json(file_name=file_name,
-                        verbose=verbose)
+    results = load_json(file_name=file_name, verbose=verbose)
 
     return results
 
 
-def save_results(results,
-                 file_name=None,
-                 verbose=True):
+def save_results(results, file_name=None, verbose=True):
     if file_name is None:
         file_name = get_output_file_name()
 
@@ -91,9 +84,11 @@ def sort_by_followers(results=None):
     if results is None:
         results = load_results()
 
-    sorted_app_ids = sorted(results.keys(),
-                            key=lambda x: results[x]['steam_followers'],
-                            reverse=True)
+    sorted_app_ids = sorted(
+        results.keys(),
+        key=lambda x: results[x]['steam_followers'],
+        reverse=True,
+    )
 
     sorted_app_ids_as_integers = [int(app_id) for app_id in sorted_app_ids]
 
@@ -103,13 +98,17 @@ def sort_by_followers(results=None):
 def print_formatted_results(results):
     sorted_app_ids = sort_by_followers(results)
 
-    for (rank, app_id) in enumerate(sorted_app_ids):
+    for rank, app_id in enumerate(sorted_app_ids):
         game = results[str(app_id)]
-        print('{:3}) {} (appID=[{}]({}) ; #followers = {})'.format(rank + 1,
-                                                                   game['title'],
-                                                                   game['id'],
-                                                                   get_steamdb_url(app_id),
-                                                                   game['steam_followers']))
+        print(
+            '{:3}) {} (appID=[{}]({}) ; #followers = {})'.format(
+                rank + 1,
+                game['title'],
+                game['id'],
+                get_steamdb_url(app_id),
+                game['steam_followers'],
+            ),
+        )
     return True
 
 

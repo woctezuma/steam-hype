@@ -20,7 +20,11 @@ class TestConvertRankingMethods(unittest.TestCase):
     def test_convert_ranking_for_scipy(self):
         ranking = ["a", "c", "b", "d"]
         references = convert_ranking.list_app_ids(ranking, [])
-        ranks = convert_ranking.convert_ranking_for_scipy(ranking, references, reverse_order=False)
+        ranks = convert_ranking.convert_ranking_for_scipy(
+            ranking,
+            references,
+            reverse_order=False,
+        )
         self.assertEqual(len(ranks), len(ranking))
         self.assertGreaterEqual(min(ranks), 1)
         self.assertLessEqual(max(ranks), len(ranking) + 1)
@@ -36,7 +40,10 @@ class TestConvertRankingMethods(unittest.TestCase):
     def test_convert_ranking_to_vector_of_scores(self):
         ranking = ["a", "c", "b", "d"]
         references = convert_ranking.list_app_ids(ranking, [])
-        scores = convert_ranking.convert_ranking_to_vector_of_scores(ranking, references)
+        scores = convert_ranking.convert_ranking_to_vector_of_scores(
+            ranking,
+            references,
+        )
         self.assertEqual(len(scores), len(ranking))
         self.assertGreaterEqual(min(scores), 0)
         self.assertLessEqual(max(scores), len(ranking))
@@ -105,7 +112,6 @@ class TestDownloadSteamMethods(unittest.TestCase):
 
 
 class TestDownloadSteamDBMethods(unittest.TestCase):
-
     def test_get_steamdb_url(self):
         url = download_steamdb.get_steamdb_url()
         self.assertGreater(len(url), 0)
@@ -127,7 +133,6 @@ class TestDownloadSteamDBMethods(unittest.TestCase):
 
 
 class TestUtilsMethods(unittest.TestCase):
-
     def test_get_steamdb_url(self):
         url = utils.get_steamdb_url(app_id='440')
         self.assertGreater(len(url), 0)
@@ -198,7 +203,6 @@ class TestUtilsMethods(unittest.TestCase):
 
 
 class TestDownloadHypeMethods(unittest.TestCase):
-
     def test_get_steam_hype_url(self):
         url = download_hype.get_steam_hype_url()
         self.assertGreater(len(url), 0)
@@ -219,24 +223,25 @@ class TestDownloadHypeMethods(unittest.TestCase):
     def test_batch_request_data(self):
         input_value = 100000
         params = download_hype.get_steam_hype_params(num_followers=input_value)
-        results = download_hype.batch_request_data(params,
-                                                   save_results_to_disk=False)
+        results = download_hype.batch_request_data(params, save_results_to_disk=False)
         self.assertGreater(len(results), 0)
 
     def test_main(self):
         input_value = 100000
-        self.assertTrue(download_hype.main(num_followers=input_value,
-                                           save_results_to_disk=False))
+        self.assertTrue(
+            download_hype.main(num_followers=input_value, save_results_to_disk=False),
+        )
 
 
 class TestCompareToTopWishlistsMethods(unittest.TestCase):
-
     def test_trim_rankings(self):
         ranking_A = range(10)
         ranking_B = range(20)
 
-        ranking_A, ranking_B = compare_to_top_wishlists.trim_rankings(ranking_A,
-                                                                      ranking_B)
+        ranking_A, ranking_B = compare_to_top_wishlists.trim_rankings(
+            ranking_A,
+            ranking_B,
+        )
 
         self.assertEqual(len(ranking_A), len(ranking_B))
 
@@ -244,8 +249,7 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
 
-        rho, p_value = compare_to_top_wishlists.compute_rho(ranking_A,
-                                                            ranking_B)
+        rho, p_value = compare_to_top_wishlists.compute_rho(ranking_A, ranking_B)
 
         self.assertTrue(-1 <= rho <= 1)
 
@@ -253,8 +257,7 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
 
-        tau, p_value = compare_to_top_wishlists.compute_tau(ranking_A,
-                                                            ranking_B)
+        tau, p_value = compare_to_top_wishlists.compute_tau(ranking_A, ranking_B)
 
         self.assertTrue(-1 <= tau <= 1)
 
@@ -262,8 +265,10 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
 
-        weighted_tau, p_value = compare_to_top_wishlists.compute_weighted_tau(ranking_A,
-                                                                              ranking_B)
+        weighted_tau, p_value = compare_to_top_wishlists.compute_weighted_tau(
+            ranking_A,
+            ranking_B,
+        )
 
         self.assertTrue(-1 <= weighted_tau <= 1)
 
@@ -271,8 +276,10 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
 
-        rbo_estimate, reference_overlap = compare_to_top_wishlists.compute_rank_biased_overlap(ranking_A,
-                                                                                               ranking_B)
+        (
+            rbo_estimate,
+            reference_overlap,
+        ) = compare_to_top_wishlists.compute_rank_biased_overlap(ranking_A, ranking_B)
 
         self.assertTrue(0 <= rbo_estimate <= 1)
         self.assertTrue(0 <= reference_overlap <= 1)
@@ -281,8 +288,12 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
         ranking_A = [12, 2, 1, 12, 2]
         ranking_B = [1, 4, 7, 1, 0]
 
-        self.assertTrue(compare_to_top_wishlists.compute_several_rank_correlations(ranking_A,
-                                                                                   ranking_B))
+        self.assertTrue(
+            compare_to_top_wishlists.compute_several_rank_correlations(
+                ranking_A,
+                ranking_B,
+            ),
+        )
 
     def test_load_data_v1(self):
         top_follows, top_wishlists = compare_to_top_wishlists.load_data_v1()
@@ -296,7 +307,12 @@ class TestCompareToTopWishlistsMethods(unittest.TestCase):
 
     def run_statistical_analysis(self):
         top_follows, top_wishlists = compare_to_top_wishlists.load_data_v2()
-        self.assertTrue(compare_to_top_wishlists.run_statistical_analysis(top_follows, top_wishlists))
+        self.assertTrue(
+            compare_to_top_wishlists.run_statistical_analysis(
+                top_follows,
+                top_wishlists,
+            ),
+        )
 
     def test_main_v1(self):
         self.assertTrue(compare_to_top_wishlists.main(version=1))

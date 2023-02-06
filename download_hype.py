@@ -38,17 +38,14 @@ def request_data(params=None):
     if params is None:
         params = get_steam_hype_params()
 
-    resp_data = requests.get(url=get_steam_hype_url(),
-                             params=params)
+    resp_data = requests.get(url=get_steam_hype_url(), params=params)
 
     result = resp_data.json()
 
     return result
 
 
-def batch_request_data(params,
-                       save_results_to_disk=True,
-                       verbose=False):
+def batch_request_data(params, save_results_to_disk=True, verbose=False):
     results = dict()
 
     while True:
@@ -74,12 +71,13 @@ def batch_request_data(params,
     return results
 
 
-def main(num_followers=5000,
-         save_results_to_disk=True):
+def main(num_followers=5000, save_results_to_disk=True):
     params = get_steam_hype_params(num_followers=num_followers)
 
-    results = batch_request_data(params=params,
-                                 save_results_to_disk=save_results_to_disk)
+    results = batch_request_data(
+        params=params,
+        save_results_to_disk=save_results_to_disk,
+    )
 
     return True
 

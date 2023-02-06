@@ -16,8 +16,7 @@ def get_headers():
 
 def download_steamdb():
     text_aggregate = ''
-    r = requests.get(url=get_steamdb_url(),
-                     headers=get_headers())
+    r = requests.get(url=get_steamdb_url(), headers=get_headers())
     if r.ok:
         text_aggregate = r.text
     return text_aggregate

@@ -12,13 +12,9 @@ from rbo import rbo, average_overlap
 from utils import sort_by_followers, load_manual_wishlist_snapshot
 
 
-def trim_rankings(ranking_A,
-                  ranking_B,
-                  depth=None,
-                  verbose=True):
+def trim_rankings(ranking_A, ranking_B, depth=None, verbose=True):
     if depth is None:
-        depth = min(len(ranking_A),
-                    len(ranking_B))
+        depth = min(len(ranking_A), len(ranking_B))
 
     ranking_A = ranking_A[:depth]
     ranking_B = ranking_B[:depth]
@@ -29,7 +25,11 @@ def trim_rankings(ranking_A,
     return ranking_A, ranking_B
 
 
-from convert_ranking import list_app_ids, convert_ranking_to_vector_of_ranks, convert_ranking_to_vector_of_scores
+from convert_ranking import (
+    list_app_ids,
+    convert_ranking_to_vector_of_ranks,
+    convert_ranking_to_vector_of_scores,
+)
 
 
 def compute_rho(ranking_A, ranking_B):
@@ -77,23 +77,24 @@ def compute_weighted_tau(ranking_A, ranking_B):
 
     weighted_tau, p_value = stats.weightedtau(x, y)
 
-    print('Weighted Kendall rank-order correlation coefficient: {:.4f}'.format(weighted_tau))
+    print(
+        'Weighted Kendall rank-order correlation coefficient: {:.4f}'.format(
+            weighted_tau,
+        ),
+    )
     print('p-value to test for non-correlation: {:.4f}'.format(p_value))
 
     return weighted_tau, p_value
 
 
 def compute_rank_biased_overlap(ranking_A, ranking_B, rbo_parameter=0.99):
-    rbo_output = rbo(ranking_A,
-                     ranking_B,
-                     p=rbo_parameter)
+    rbo_output = rbo(ranking_A, ranking_B, p=rbo_parameter)
 
     rbo_lower_bound = rbo_output.min
     rbo_residual = rbo_output.res
     rbo_estimate = rbo_output.ext
 
-    reference_overlap = average_overlap(ranking_A,
-                                        ranking_B)
+    reference_overlap = average_overlap(ranking_A, ranking_B)
 
     print('Rank-biased overlap estimate: {:.4f}'.format(rbo_estimate))
     print('Average overlap = {:.4f}'.format(reference_overlap))
@@ -101,18 +102,15 @@ def compute_rank_biased_overlap(ranking_A, ranking_B, rbo_parameter=0.99):
     return rbo_estimate, reference_overlap
 
 
-def compute_several_rank_correlations(ranking_A,
-                                      ranking_B,
-                                      rbo_parameter=0.99):
-    rho, p_value = compute_rho(ranking_A,
-                               ranking_B)
-    tau, p_value = compute_tau(ranking_A,
-                               ranking_B)
-    weighted_tau, p_value = compute_weighted_tau(ranking_A,
-                                                 ranking_B)
-    rbo_estimate, reference_overlap = compute_rank_biased_overlap(ranking_A,
-                                                                  ranking_B,
-                                                                  rbo_parameter=rbo_parameter)
+def compute_several_rank_correlations(ranking_A, ranking_B, rbo_parameter=0.99):
+    rho, p_value = compute_rho(ranking_A, ranking_B)
+    tau, p_value = compute_tau(ranking_A, ranking_B)
+    weighted_tau, p_value = compute_weighted_tau(ranking_A, ranking_B)
+    rbo_estimate, reference_overlap = compute_rank_biased_overlap(
+        ranking_A,
+        ranking_B,
+        rbo_parameter=rbo_parameter,
+    )
 
     return True
 
@@ -137,13 +135,9 @@ def run_statistical_analysis(top_follows, top_wishlists, verbose=False):
         print('Top follows: {}'.format(top_follows))
         print('Top wishlists: {}'.format(top_wishlists))
 
-    top_follows, top_wishlists = trim_rankings(top_follows,
-                                               top_wishlists,
-                                               depth=None)
+    top_follows, top_wishlists = trim_rankings(top_follows, top_wishlists, depth=None)
 
-    compute_several_rank_correlations(top_follows,
-                                      top_wishlists,
-                                      rbo_parameter=0.99)
+    compute_several_rank_correlations(top_follows, top_wishlists, rbo_parameter=0.99)
     return True
 
 
